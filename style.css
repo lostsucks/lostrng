@@ -181,8 +181,7 @@ header {
 .recent-rngs {
   position: fixed;
   top: 0;
-  right: 0;
-  left: 100%;
+  left: 39vh;
   width: 200px;
   height: 40%;
   background-color: #292929;

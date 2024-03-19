@@ -201,32 +201,32 @@ btn.addEventListener('click', () => {
     { text: '1 in 350 chance', weight: 0.00185714285 },
     { text: '1 in 512 chance', weight: 0.000953125 },
     { text: '1 in 777 chance', weight: 0.00028534704 },
-    { text: '1 in 1004 chance', weight: 0.00089501661 },
-    { text: '1 in 1024 chance', weight: 0.0008765625 },
-    { text: '1 in 1111 chance', weight: 0.00080009001 },
-    { text: '1 in 2048 chance', weight: 0.00038828125 },
-    { text: '1 in 4096 chance', weight: 0.00014414062 },
-    { text: '1 in 4444 chance', weight: 0.00012502250 },
-    { text: '1 in 5000 chance', weight: 0.00010004000 },
-    { text: '1 in 6900 chance', weight: 0.00004492753 },
-    { text: '1 in 6969 chance', weight: 0.00004367816 },
-    { text: '1 in 10000 chance', weight: 0.00001000000 },
-    { text: '1 in 12000 chance', weight: 0.00007333333 },
-    { text: '1 in 12800 chance', weight: 0.00006812500 },
-    { text: '1 in 24500 chance', weight: 0.00003081632 },
-    { text: '1 in 30000 chance', weight: 0.00002333333 },
-    { text: '1 in 40000 chance', weight: 0.00001500000 },
-    { text: '1 in 69000 chance', weight: 0.00000449275 },
-    { text: '1 in 70000 chance', weight: 0.00000428571 },
-    { text: '1 in 99999 chance', weight: 0.00000100010 },
-    { text: '1 in 100000 chance', weight: 0.00000100000 },
-    { text: '1 in 100400 chance', weight: 0.00000896016 },
-    { text: '1 in 200000 chance', weight: 0.00000400000 },
-    { text: '1 in 350000 chance', weight: 0.00000185714 },
-    { text: '1 in 500000 chance', weight: 0.00000100000 },
-    { text: '1 in 600000 chance', weight: 0.00000066667 },
-    { text: '1 in 1000000 chance', weight: 0.00000010000 },
-    { text: '1 in 1100000 chance', weight: 0.00000009909 },
+    { text: '1 in 1,004 chance', weight: 0.00089501661 },
+    { text: '1 in 1,024 chance', weight: 0.0008765625 },
+    { text: '1 in 1,111 chance', weight: 0.00080009001 },
+    { text: '1 in 2,048 chance', weight: 0.00038828125 },
+    { text: '1 in 4,096 chance', weight: 0.00014414062 },
+    { text: '1 in 4,444 chance', weight: 0.00012502250 },
+    { text: '1 in 5,000 chance', weight: 0.00010004000 },
+    { text: '1 in 6,900 chance', weight: 0.00004492753 },
+    { text: '1 in 6,969 chance', weight: 0.00004367816 },
+    { text: '1 in 10,000 chance', weight: 0.00001000000 },
+    { text: '1 in 12,000 chance', weight: 0.00007333333 },
+    { text: '1 in 12,800 chance', weight: 0.00006812500 },
+    { text: '1 in 24,500 chance', weight: 0.00003081632 },
+    { text: '1 in 30,000 chance', weight: 0.00002333333 },
+    { text: '1 in 40,000 chance', weight: 0.00001500000 },
+    { text: '1 in 69,000 chance', weight: 0.00000449275 },
+    { text: '1 in 70,000 chance', weight: 0.00000428571 },
+    { text: '1 in 99,999 chance', weight: 0.00000100010 },
+    { text: '1 in 100,000 chance', weight: 0.00000100000 },
+    { text: '1 in 100,400 chance', weight: 0.00000896016 },
+    { text: '1 in 200,000 chance', weight: 0.00000400000 },
+    { text: '1 in 350,000 chance', weight: 0.00000185714 },
+    { text: '1 in 500,000 chance', weight: 0.00000100000 },
+    { text: '1 in 600,000 chance', weight: 0.00000066667 },
+    { text: '1 in 1,000,000 chance', weight: 0.00000010000 },
+    { text: '1 in 1,100,000 chance', weight: 0.00000009909 },
   ];
 
   const randomNumber = Math.random();
@@ -239,6 +239,12 @@ btn.addEventListener('click', () => {
       rarityMessage.textContent = rarity.text;
       rarityMessage.style.color = rarity.color;
       rarityMessage.style.textShadow = '0 0 20px ' + rarity.color + ', 0 0 40px ' + rarity.color + ', 0 0 84px ' + rarity.color;
+
+      if (chance.text === '1 in 8 chance') {
+        document.body.style.backgroundImage = "url('images/coin.gif')";
+      } else {
+        document.body.style.backgroundColor = "#292929"
+      }
 
       chanceMessage.textContent = message;
 
@@ -261,6 +267,7 @@ btn.addEventListener('click', () => {
         listItem.style.color = rarity.color;
         listItem.style.fontFamily = 'sans-serif';
         listItem.style.fontWeight = '700px';
+
         
         recentRngList.appendChild(listItem);
       }

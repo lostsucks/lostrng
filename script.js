@@ -241,10 +241,10 @@ btn.addEventListener('click', () => {
       rarityMessage.style.textShadow = '0 0 20px ' + rarity.color + ', 0 0 40px ' + rarity.color + ', 0 0 84px ' + rarity.color;
 
       if (chance.text === '1 in 8 chance') {
-        document.body.style.backgroundImage = "url('images/coin.gif')";
+        document.body.style.backgroundImage = "url('/lostrng/images/coin.gif')";
       } else {
-        document.body.style.backgroundColor = "#292929"
-      }
+        document.body.style.backgroundColor = "#121212"
+      };
 
       chanceMessage.textContent = message;
 

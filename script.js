@@ -4,6 +4,8 @@ const chanceMessage = document.getElementById('chance-message');
 const clickCountElement = document.getElementById('click-count');
 const recentRngList = document.querySelector('.recent-rng-list');
 
+let originalBackgroundColor = document.body.style.backgroundColor;
+
 let clickCount = 0;
 let recentRngs = [];
 
@@ -239,12 +241,13 @@ btn.addEventListener('click', () => {
       rarityMessage.textContent = rarity.text;
       rarityMessage.style.color = rarity.color;
       rarityMessage.style.textShadow = '0 0 20px ' + rarity.color + ', 0 0 40px ' + rarity.color + ', 0 0 84px ' + rarity.color;
-
       if (chance.text === '1 in 8 chance') {
-        document.body.style.backgroundImage = "url('/lostrng/images/coin.gif')";
+        document.body.style.backgroundImage = "url('images/coin.gif')";
+        document.body.style.backgroundColor = "transparent";
       } else {
-        document.body.style.backgroundColor = "#121212"
-      };
+        document.body.style.backgroundColor = "#121212";
+        document.body.style.backgroundImage = "none";
+      }
 
       chanceMessage.textContent = message;
 
@@ -285,11 +288,14 @@ let cooldownTimer;
 function resetCooldown() {
   isOnCooldown = false;
   clearTimeout(cooldownTimer);
+  document.body.style.backgroundColor = originalBackgroundColor; // Restore the original background color
   document.getElementById('cooldown-message').textContent = '';
 }
 
+
 function setCooldown() {
   isOnCooldown = true;
-  //document.getElementById('cooldown-message').textContent = 'Cooldown!';
+  originalBackgroundColor = document.body.style.backgroundColor; // Save the current background color
+  document.body.style.backgroundColor = "#121212"; // Change the background color to the original color
   cooldownTimer = setTimeout(resetCooldown, cooldownTime);
 }

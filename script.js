@@ -4,8 +4,6 @@ const chanceMessage = document.getElementById('chance-message');
 const clickCountElement = document.getElementById('click-count');
 const recentRngList = document.querySelector('.recent-rng-list');
 
-let originalBackgroundColor = document.body.style.backgroundColor;
-
 let clickCount = 0;
 let recentRngs = [];
 
@@ -281,14 +279,11 @@ let cooldownTimer;
 function resetCooldown() {
   isOnCooldown = false;
   clearTimeout(cooldownTimer);
-  document.body.style.backgroundColor = originalBackgroundColor; // Restore the original background color
   document.getElementById('cooldown-message').textContent = '';
 }
 
-
 function setCooldown() {
   isOnCooldown = true;
-  originalBackgroundColor = document.body.style.backgroundColor; // Save the current background color
-  document.body.style.backgroundColor = "#121212"; // Change the background color to the original color
+  //document.getElementById('cooldown-message').textContent = 'Cooldown!';
   cooldownTimer = setTimeout(resetCooldown, cooldownTime);
 }

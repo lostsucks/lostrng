@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>RNG</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="rounded-box">
+      <div class="logo">
+        <span class="greenRNG">R</span><span class="whiteRNG">NG</span>
+      </div>
+      <div class="pfp-container">
+        <img src="images/default.jpg" alt="pfp" width=100 class="pfp">
+        <div class="username">Username</div>
+        <div class="lower-username">Lower Username</div>
+      </div>
+
+      <button class="btn">Click to RNG!</button>
+      <div class="click-count" id="click-count">Clicks: 0</div>
+      
+      <div class="rarity-message" id="rarity-message"></div>
+      <div class="chance-message" id="chance-message"></div>
+      <div class="cooldown-message" id="cooldown-message"></div>
+
+      <div class="recent-rngs">
+        <div class="recent-rng-title">Recent RNGs:</div>
+        <ul class="recent-rng-list">
+          <!-- Recent RNGs will be inserted here -->
+        </ul>
+      </div>
+    </div>
+    <div class="message-area large-area">
+      <div class="message-container">
+        <div id="discovery-message"></div>
+        <div id="rarity-message"></div>
+        <div id="chance-message"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

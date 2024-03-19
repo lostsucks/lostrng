@@ -1,0 +1,42 @@
+Common|1/2|gray|animation1.txt|0.5
+Uncommon|1/4|green|animation2.txt|0.25
+Good|1/5|gray|animation3.txt|0.2
+Natural|1/8|limegreen|animation4.txt|0.125
+Rare|1/16|blue|animation5.txt|0.0625
+Divinus|1/32|gold|animation6.txt|0.03125
+Crystallized|1/64|purple|animation7.txt|0.015625
+Rage|1/128|red|animation8.txt|0.0078125
+Glacier|1/256|cyan|animation9.txt|0.00390625
+Wind|1/300|lightblue|animation10.txt|0.00333333333
+Ruby|1/350|darkred|animation11.txt|0.00285714285
+Gilded|1/512|yellow|animation12.txt|0.001953125
+Jackpot|1/777|gold|animation13.txt|0.00128534704
+Diaboli|1/1004|darkred|animation14.txt|0.00099501661
+Precious|1/1024|lightblue|animation15.txt|0.0009765625
+Undefined|1/1111|gray|animation16.txt|0.00090009001
+Magnetic|1/2048|lightblue|animation17.txt|0.00048828125
+Sidereum|1/4096|gold|animation18.txt|0.00024414062
+Bleeding|1/4444|red|animation19.txt|0.00022502250
+Lunar|1/5000|lightblue|animation20.txt|0.00020004000
+Solar|1/5000|yellow|animation21.txt|0.00020004000
+Flushed|1/6900|yellow|animation22.txt|0.00014492753
+awhecksno|1/6969|red|animation23.txt|0.00014367816
+Undead|1/10000|darkgreen|animation24.txt|0.00010000000
+Comet|1/12000|lightblue|animation25.txt|0.00008333333
+Heated Rage|1/12800|red|animation26.txt|0.00007812500
+Permafrost|1/24500|cyan|animation27.txt|0.00004081632
+Stormal|1/30000|lightblue|animation28.txt|0.00003333333
+Eclipse|1/30000|darkblue|animation29.txt|0.00003333333
+Aquatic|1/40000|lightblue|animation30.txt|0.00002500000
+Lobotomy|1/69000|green|animation31.txt|0.00001449275
+Nautilus|1/70000|lightblue|animation32.txt|0.00001428571
+Exotic|1/99999|white|animation33.txt|0.00001000010
+Devil Undead|1/100000|darkgreen|animation34.txt|0.00001000000
+Voided Diaboli|1/100400|darkred|animation35.txt|0.00000996016
+Bounded|1/200000|lightblue|animation36.txt|0.00000500000
+Celestial|1/350000|lightblue|animation37.txt|0.00000285714
+Galaxy|1/500000|lightblue|animation38.txt|0.00000200000
+FULLMOON|1/500000|lightblue|animation39.txt|0.00000200000
+Twilight|1/600000|lightblue|animation40.txt|0.00000166667
+Arcane|1/1000000|lightblue|animation41.txt|0.00000100000
+STARCOURSE|1/1100000|red|animation42.txt|0.00000090909

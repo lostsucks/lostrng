@@ -5,6 +5,10 @@ html {
 
 body {
   background-color: #121212;
+  background-image: none;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 

@@ -242,7 +242,7 @@ btn.addEventListener('click', () => {
       rarityMessage.style.color = rarity.color;
       rarityMessage.style.textShadow = '0 0 20px ' + rarity.color + ', 0 0 40px ' + rarity.color + ', 0 0 84px ' + rarity.color;
       if (chance.text === '1 in 8 chance') {
-        document.body.style.backgroundImage = "url('images/coin.gif')";
+        document.body.style.backgroundImage = "url('images/default.jpg')";
         document.body.style.backgroundColor = "transparent";
       } else {
         document.body.style.backgroundColor = "#121212";
